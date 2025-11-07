@@ -107,3 +107,47 @@ input[type="range"]::-ms-fill-lower {
 input[type="range"]::-ms-fill-upper {
   background-color: black;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  #wishes {
+    width: 90vw;
+    margin: calc(50vh - 8em) auto;
+  }
+  #pleaseClick {
+    width: 12em;
+    left: calc(50vw - 6em);
+    top: calc(50vh - 15em);
+    font-size: 70%;
+  }
+  #pleaseClick span {
+    font-size: 250%;
+  }
+  input[type="range"],
+  input[type="range"]::-webkit-slider-runnable-track,
+  input[type="range"]::-webkit-slider-thumb {
+    width: 80vw;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+  #wishes {
+    width: 25em;
+  }
+  #pleaseClick {
+    width: 12em;
+    left: calc(50vw - 6em);
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+  /* Keep original styles */
+}
